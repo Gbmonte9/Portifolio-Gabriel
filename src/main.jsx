@@ -17,20 +17,20 @@ const router = createBrowserRouter(
       errorElement: <ErrorPage />,
       children: [
         {
-          path: "/",
+          index: true, 
           element: <Navigate to="perfil" replace />,
         },
         {
           path: "perfil",
-          element: <Perfil urlPerfil={"/portifolio-gabriel/Json/Perfil.json"} />,
+          element: <Perfil urlPerfil={"/Json/Perfil.json"} />,
         },
         {
           path: "academico",
-          element: <Academico urlAcademico={"/portifolio-gabriel/Json/Academico.json"} />,
+          element: <Academico urlAcademico={"/Json/Academico.json"} />,
         },
         {
           path: "portifolio",
-          element: <Portifolio urlPortifolio={"/portifolio-gabriel/Json/Portifolio.json"} />,
+          element: <Portifolio urlPortifolio={"/Json/Portifolio.json"} />,
         },
       ],
     },
