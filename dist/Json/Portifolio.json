@@ -1,0 +1,43 @@
+{
+    "Projeto" : {
+        "titulo" : "Projeto",
+        "projetos" : [
+            {
+                "nome" :"Gestor-de-Estudantes-em-Vue.js",
+                "descricao" : "Este projeto é um aplicativo web responsivo desenvolvido utilizando Vue.js para gerenciamento de estudantes.",
+                "img" : "./Portifolio-img/image.png",
+                "link" : "https://github.com/Gbmonte9/Gestor-de-Estudantes-em-Vue.js"
+            },
+            {
+                "nome" :"Esporte-Aula",
+                "descricao" : "Um projeto que criei com html avançado com responsividade e bootstrap, cadastrado aluno, professor, e juntos formando uma aula com crud.",
+                "img" : "./Portifolio-img/image.png",
+                "link" : "https://github.com/Gbmonte9/Esporte-Aula"
+            },
+            {
+                "nome" :"Cinema-web",
+                "descricao" : "About Projeto que fiz para simula um cinema, criei 4 classes 'Cliente', 'Filme', 'Sessao', 'Venda', onde o usuario sendo um cliente ele se cadastrar e escolhe um filme que tem uma sessão assim partindo para a venda. O cadastro de Venda e Sessão com Filme e com o admin, fiz CRUD com os 4 objetos, usando html, css, javascript, bootstrap, java.",
+                "img" : "./Portifolio-img/image.png",
+                "link" : "https://github.com/Gbmonte9/Cinema-web"
+            },
+            {
+                "nome" :"Project-Paper-Rock-Scissors-in-JavaScript",
+                "descricao" : "I recently created a classic “Rock, Paper, Scissors” game using JavaScript. In this game, players make their choice between paper, rock, or scissors, and the winner is determined by the following basic rules.",
+                "img" : "./Portifolio-img/image.png",
+                "link" : "https://github.com/Gbmonte9/Project-Paper-Rock-Scissors-in-JavaScript"
+            },
+            {
+                "nome" :"Weather-App-Aplicativo-de-Consulta-Clim-tica",
+                "descricao" : "Uma criação com API para ver o clima do mundo.",
+                "img" : "./Portifolio-img/image.png",
+                "link" : "https://github.com/Gbmonte9/Weather-App-Aplicativo-de-Consulta-Clim-tica"
+            },
+            {
+                "nome" :"Aplica-o-de-Filtragem-de-Tarefas-com-JavaScript-e-Bootstrap",
+                "descricao" : "Estou entusiasmado em compartilhar meu mais recente projeto, onde desenvolvi uma aplicação simples e funcional para filtrar tarefas usando JavaScript e Bootstrap. A aplicação consome dados de uma API e permite aos usuários visualizar tarefas concluídas ou pendentes com um simples clique.",
+                "img" : "./Portifolio-img/image.png",
+                "link" : "https://github.com/Gbmonte9/Aplica-o-de-Filtragem-de-Tarefas-com-JavaScript-e-Bootstrap"
+            }
+        ]
+    }
+}
