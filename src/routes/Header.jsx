@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import config from 'Json/Perfil.json';
+import config from '../Json/Perfil.json';
 
 function Header({vperfil, vacademico, vportifolio}){
     const gabriel = config.Pessoa;
