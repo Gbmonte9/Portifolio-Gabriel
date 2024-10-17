@@ -1,4 +1,4 @@
-import { Outlet, useNavigate} from "react-router-dom";
+import { Outlet, useNavigate, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
@@ -9,16 +9,31 @@ import './css/body.css';
 
 export default function Root() {
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
-    const currentPath = window.location.pathname.replace('/portifolio-gabriel', '').toLowerCase(); // Converte para minúsculas
+    const currentPath = location.pathname;
 
     // Verifica se a rota atual não é válida e redireciona para a página inicial
-    const validPaths = ['/', '/perfil', '/academico', '/portifolio'];
-    if (!validPaths.includes(currentPath)) {
+    if (
+      currentPath !== '/' &&
+      currentPath !== '/perfil' &&
+      currentPath !== '/Perfil' &&
+      currentPath !== '/academico' &&
+      currentPath !== '/Academico' &&
+      currentPath !== '/portifolio' &&
+      currentPath !== '/Portifolio'
+    ) {
       navigate('/');
     }
-  }, [navigate]);
+  }, [navigate, location]);
+
+  useEffect(() => {
+    // Redireciona para a URL base se a página for recarregada
+    if (location.pathname === '/') {
+      window.location.href = "https://gbmonte9.github.io/portifolio-gabriel";
+    }
+  }, [location.pathname]);
   
     return (
       <>
