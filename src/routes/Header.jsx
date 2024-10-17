@@ -14,7 +14,7 @@ function Header({vperfil, vacademico, vportifolio}){
                 Portfolio
             </a>
 
-            <ul className="nav justify-content-end ">
+            <ul className="nav justify-content-end d-flex flex-row">
                 <li className="nav-item">
                     <Link to={vperfil} className="nav-link link-custom">{vperfil}</Link>
                 </li>

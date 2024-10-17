@@ -10,9 +10,9 @@ export default function Root() {
     const location = useLocation();
 
     useEffect(() => {
-      // Verifica se a página foi recarregada
+
       if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_RELOAD) {
-        // Redireciona para a URL base ao recarregar a página
+        
         window.location.href = "https://gbmonte9.github.io/portifolio-gabriel/";
       }
     }, [location]);
@@ -20,7 +20,7 @@ export default function Root() {
     return (
       <>
         <div id="sidebar">
-          <nav className="navbar"> 
+          <nav className="navbar navbar-expand-sm"> 
             <Header vperfil='Perfil' vacademico='Academico' vportifolio='Portifolio' />
           </nav>
         </div>
