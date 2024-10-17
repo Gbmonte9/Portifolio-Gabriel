@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
 
-import img from "./img/img.png";
+import config from '../Json/Perfil.json';
 
 function Header({vperfil, vacademico, vportifolio}){
+    const gabriel = config.Pessoa;
+
     return(
 
         <div className="container-fluid ">
             
             <a className="navbar-brand text-primary text-light" href="#">
-                <img src={img} alt="Logo" width="30" height="30" className="d-inline-block align-text-top" />
+                <img src={gabriel.logo} alt="Logo" width="30" height="30" className="d-inline-block align-text-top" />
                 Portfolio
             </a>
 
