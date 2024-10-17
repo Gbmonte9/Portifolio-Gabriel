@@ -1,9 +1,6 @@
 import { Outlet, useNavigate} from "react-router-dom";
 import { useEffect } from "react";
 import Header from "./Header.jsx";
-
-import Perfil from "../Perfil/Perfil.jsx";
-
 import Footer from "./Footer.jsx";
 
 import './css/body.css';
@@ -13,22 +10,15 @@ import './css/body.css';
 export default function Root() {
   const navigate = useNavigate();
 
-    useEffect(() => {
-        const currentPath = window.location.pathname.replace('/portifolio-gabriel', '');
+  useEffect(() => {
+    const currentPath = window.location.pathname.replace('/portifolio-gabriel', '').toLowerCase(); // Converte para minúsculas
 
-        // Verifica se a rota atual não é válida e redireciona para a página inicial
-        if (
-            currentPath !== '/' &&
-            currentPath !== '/perfil' &&
-            currentPath !== '/Perfil' &&
-            currentPath !== '/academico' &&
-            currentPath !== '/Academico' &&
-            currentPath !== '/portifolio' &&
-            currentPath !== '/Portifolio'
-        ) {
-            navigate('/');
-        }
-    }, [navigate]);
+    // Verifica se a rota atual não é válida e redireciona para a página inicial
+    const validPaths = ['/', '/perfil', '/academico', '/portifolio'];
+    if (!validPaths.includes(currentPath)) {
+      navigate('/');
+    }
+  }, [navigate]);
   
     return (
       <>
